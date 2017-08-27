@@ -16,9 +16,11 @@
 		3D8A9B011F364873004971E2 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3D8A9AFF1F364873004971E2 /* Main.storyboard */; };
 		3D8A9B031F364873004971E2 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3D8A9B021F364873004971E2 /* Assets.xcassets */; };
 		3D8A9B061F364873004971E2 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3D8A9B041F364873004971E2 /* LaunchScreen.storyboard */; };
+		C8B5E12455F64674266759AC /* Pods_RGProgressHUD.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 938F17E212A93FDF260CF616 /* Pods_RGProgressHUD.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		0344B93D9D6214BD08A57D90 /* Pods-RGProgressHUD.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RGProgressHUD.debug.xcconfig"; path = "Pods/Target Support Files/Pods-RGProgressHUD/Pods-RGProgressHUD.debug.xcconfig"; sourceTree = "<group>"; };
 		3D07F4DC1F3C551800113F98 /* RGProgressHUD.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = RGProgressHUD.swift; path = Source/RGProgressHUD.swift; sourceTree = "<group>"; };
 		3D07F4DD1F3C551800113F98 /* RGProgressHUD+Internal.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = "RGProgressHUD+Internal.swift"; path = "Source/RGProgressHUD+Internal.swift"; sourceTree = "<group>"; };
 		3D07F4DE1F3C551800113F98 /* RGProgressHUDAppearance.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = RGProgressHUDAppearance.swift; path = Source/RGProgressHUDAppearance.swift; sourceTree = "<group>"; };
@@ -30,6 +32,8 @@
 		3D8A9B021F364873004971E2 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		3D8A9B051F364873004971E2 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		3D8A9B071F364873004971E2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		938F17E212A93FDF260CF616 /* Pods_RGProgressHUD.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_RGProgressHUD.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		B0529AE109FBB7782AC78DB2 /* Pods-RGProgressHUD.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RGProgressHUD.release.xcconfig"; path = "Pods/Target Support Files/Pods-RGProgressHUD/Pods-RGProgressHUD.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -37,12 +41,30 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C8B5E12455F64674266759AC /* Pods_RGProgressHUD.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		05A6582EAD6F5600591DCAE3 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				0344B93D9D6214BD08A57D90 /* Pods-RGProgressHUD.debug.xcconfig */,
+				B0529AE109FBB7782AC78DB2 /* Pods-RGProgressHUD.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		292B7DBADD6408407BC3A88C /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				938F17E212A93FDF260CF616 /* Pods_RGProgressHUD.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		3D07F4DB1F3C54EE00113F98 /* Source */ = {
 			isa = PBXGroup;
 			children = (
@@ -60,6 +82,8 @@
 				3D8A9AF91F364873004971E2 /* Products */,
 				3D07F4DB1F3C54EE00113F98 /* Source */,
 				3D8A9AFA1F364873004971E2 /* RGProgressHUD */,
+				05A6582EAD6F5600591DCAE3 /* Pods */,
+				292B7DBADD6408407BC3A88C /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -92,9 +116,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 3D8A9B0A1F364873004971E2 /* Build configuration list for PBXNativeTarget "RGProgressHUD" */;
 			buildPhases = (
+				BF7AFB1376CAFF53780B87E7 /* [CP] Check Pods Manifest.lock */,
 				3D8A9AF41F364873004971E2 /* Sources */,
 				3D8A9AF51F364873004971E2 /* Frameworks */,
 				3D8A9AF61F364873004971E2 /* Resources */,
+				E869926389B91CF92598D368 /* [CP] Embed Pods Frameworks */,
+				8BDDAFE594FFF6F3124DC79A /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -152,6 +179,54 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		8BDDAFE594FFF6F3124DC79A /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-RGProgressHUD/Pods-RGProgressHUD-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		BF7AFB1376CAFF53780B87E7 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		E869926389B91CF92598D368 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-RGProgressHUD/Pods-RGProgressHUD-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		3D8A9AF41F364873004971E2 /* Sources */ = {
@@ -286,6 +361,7 @@
 		};
 		3D8A9B0B1F364873004971E2 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 0344B93D9D6214BD08A57D90 /* Pods-RGProgressHUD.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = G436LJ5F52;
@@ -300,6 +376,7 @@
 		};
 		3D8A9B0C1F364873004971E2 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = B0529AE109FBB7782AC78DB2 /* Pods-RGProgressHUD.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = G436LJ5F52;

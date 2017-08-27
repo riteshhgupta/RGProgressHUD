@@ -1,0 +1,6 @@
+framework module Pods_RGProgressHUD {
+  umbrella header "Pods-RGProgressHUD-umbrella.h"
+
+  export *
+  module * { export * }
+}
