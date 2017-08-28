@@ -21,7 +21,7 @@ extension RGProgressHUD {
 	}
 
 	func progressView(for parentView: UIView) -> UIView {
-		switch _mode {
+		switch mode {
 		case .normal(let appearance):
 			return progressView(for: parentView, with: appearance)
 		case .blur(let appearance):
@@ -32,7 +32,7 @@ extension RGProgressHUD {
 	}
 
 	func overlayView(for parentView: UIView) -> UIView {
-		switch _mode {
+		switch mode {
 		case .normal(let appearance):
 			let overlay = UIView(frame: parentView.frame)
 			overlay.backgroundColor = appearance.overlayColor

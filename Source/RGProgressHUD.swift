@@ -11,15 +11,16 @@ import UIKit
 
 public class RGProgressHUD {
 
-	let _mode: RGProgressHUDMode
+	static let shared = RGProgressHUD()
+	public var mode: RGProgressHUDMode = .normal(RGProgressHUDAppearance())
+
 	var _indicatorView: UIView!
 	var _progressView: UIView!
-
-	public init(mode: RGProgressHUDMode = .normal(RGProgressHUDAppearance())) {
-		_mode = mode
-	}
+	var isLoading = false
 
 	public func show(on parentView: UIView) {
+		guard !isLoading else { return }
+		isLoading = true
 		prepareSubviews(for: parentView)
 		UIView.animate(withDuration: 0.2) {
 			self._progressView.alpha = 1.0
@@ -36,14 +37,15 @@ public class RGProgressHUD {
 	}
 
 	public func hide() {
-		guard _progressView != nil, _indicatorView != nil else {
+		guard _progressView != nil, _indicatorView != nil, isLoading else {
 			return
 		}
+		isLoading = false
 		UIView.animate(withDuration: 0.2, animations: {
 			self._progressView.alpha = 0.0
 			self._indicatorView?.transform = CGAffineTransform(scaleX: 0.1, y: 0.1)
 		}) { _ in
-			self._progressView.removeFromSuperview()
+			self._progressView?.removeFromSuperview()
 			self._indicatorView = nil
 			self._progressView = nil
 		}

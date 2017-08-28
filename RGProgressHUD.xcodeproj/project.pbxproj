@@ -16,6 +16,9 @@
 		3D8A9B011F364873004971E2 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3D8A9AFF1F364873004971E2 /* Main.storyboard */; };
 		3D8A9B031F364873004971E2 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3D8A9B021F364873004971E2 /* Assets.xcassets */; };
 		3D8A9B061F364873004971E2 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3D8A9B041F364873004971E2 /* LaunchScreen.storyboard */; };
+		3DEE24031F54603E000C1C33 /* RGProgressHUDProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DEE24021F54603E000C1C33 /* RGProgressHUDProvider.swift */; };
+		3DEE24051F546462000C1C33 /* RGProgressHUDProvider+Reactive.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DEE24041F546462000C1C33 /* RGProgressHUDProvider+Reactive.swift */; };
+		3DEE24071F54653A000C1C33 /* ViewController+Example.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DEE24061F54653A000C1C33 /* ViewController+Example.swift */; };
 		C8B5E12455F64674266759AC /* Pods_RGProgressHUD.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 938F17E212A93FDF260CF616 /* Pods_RGProgressHUD.framework */; };
 /* End PBXBuildFile section */
 
@@ -32,6 +35,9 @@
 		3D8A9B021F364873004971E2 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		3D8A9B051F364873004971E2 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		3D8A9B071F364873004971E2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		3DEE24021F54603E000C1C33 /* RGProgressHUDProvider.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = RGProgressHUDProvider.swift; path = Source/RGProgressHUDProvider.swift; sourceTree = "<group>"; };
+		3DEE24041F546462000C1C33 /* RGProgressHUDProvider+Reactive.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = "RGProgressHUDProvider+Reactive.swift"; path = "Source/RGProgressHUDProvider+Reactive.swift"; sourceTree = "<group>"; };
+		3DEE24061F54653A000C1C33 /* ViewController+Example.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = "ViewController+Example.swift"; path = "RGProgressHUD/ViewController+Example.swift"; sourceTree = SOURCE_ROOT; };
 		938F17E212A93FDF260CF616 /* Pods_RGProgressHUD.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_RGProgressHUD.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		B0529AE109FBB7782AC78DB2 /* Pods-RGProgressHUD.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RGProgressHUD.release.xcconfig"; path = "Pods/Target Support Files/Pods-RGProgressHUD/Pods-RGProgressHUD.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -72,6 +78,8 @@
 				3D07F4DD1F3C551800113F98 /* RGProgressHUD+Internal.swift */,
 				3D07F4DE1F3C551800113F98 /* RGProgressHUDAppearance.swift */,
 				3D07F4DF1F3C551800113F98 /* RGProgressHUDMode.swift */,
+				3DEE24021F54603E000C1C33 /* RGProgressHUDProvider.swift */,
+				3DEE24041F546462000C1C33 /* RGProgressHUDProvider+Reactive.swift */,
 			);
 			name = Source;
 			sourceTree = "<group>";
@@ -104,6 +112,7 @@
 				3D8A9B041F364873004971E2 /* LaunchScreen.storyboard */,
 				3D8A9AFF1F364873004971E2 /* Main.storyboard */,
 				3D8A9AFD1F364873004971E2 /* ViewController.swift */,
+				3DEE24061F54653A000C1C33 /* ViewController+Example.swift */,
 			);
 			name = RGProgressHUD;
 			path = RGProgressHud;
@@ -234,11 +243,14 @@
 			buildActionMask = 2147483647;
 			files = (
 				3D8A9AFE1F364873004971E2 /* ViewController.swift in Sources */,
+				3DEE24031F54603E000C1C33 /* RGProgressHUDProvider.swift in Sources */,
 				3D07F4E21F3C551800113F98 /* RGProgressHUDAppearance.swift in Sources */,
 				3D07F4E31F3C551800113F98 /* RGProgressHUDMode.swift in Sources */,
+				3DEE24071F54653A000C1C33 /* ViewController+Example.swift in Sources */,
 				3D07F4E01F3C551800113F98 /* RGProgressHUD.swift in Sources */,
 				3D07F4E11F3C551800113F98 /* RGProgressHUD+Internal.swift in Sources */,
 				3D8A9AFC1F364873004971E2 /* AppDelegate.swift in Sources */,
+				3DEE24051F546462000C1C33 /* RGProgressHUDProvider+Reactive.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
