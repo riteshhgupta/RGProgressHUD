@@ -14,4 +14,18 @@ Pod::Spec.new do |spec|
   spec.ios.deployment_target = "9.0"
   spec.source_files =  'Source/*.{swift}'
   spec.requires_arc =  true
+
+  spec.subspec 'Core' do |core|
+      core.source_files = 'Source/*.swift'
+      core.exclude_files = 'Source/RGProgressHUDProvider+Reactive.swift'
+  end
+
+  spec.subspec 'ReactiveSwift' do |reactiveswift|
+      reactiveswift.dependency 'RGProgressHUD/Core'
+      reactiveswift.dependency 'ReactiveSwift', '~> 2.0'
+      reactiveswift.dependency 'ReactiveCocoa', '~> 6.0'
+      reactiveswift.source_files = 'Source/RGProgressHUDProvider+Reactive.swift'
+  end
+
+  spec.default_subspec = 'Core'
 end
