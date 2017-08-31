@@ -9,13 +9,13 @@
 import Foundation
 import UIKit
 
-protocol RGProgressHUDProvider {
+public protocol RGProgressHUDProvider {
 
 	var hud: RGProgressHUD { get }
 	var presentingView: UIView { get }
 }
 
-extension RGProgressHUDProvider {
+public extension RGProgressHUDProvider {
 
 	var hud: RGProgressHUD {
 		return RGProgressHUD.shared
@@ -30,14 +30,14 @@ extension RGProgressHUDProvider {
 	}
 }
 
-extension RGProgressHUDProvider where Self: UIViewController {
+public extension RGProgressHUDProvider where Self: UIViewController {
 
 	var presentingView: UIView {
 		return view
 	}
 }
 
-extension RGProgressHUDProvider where Self: UIView {
+public extension RGProgressHUDProvider where Self: UIView {
 
 	var presentingView: UIView {
 		return self
