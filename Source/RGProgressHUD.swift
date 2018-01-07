@@ -11,7 +11,7 @@ import UIKit
 
 public class RGProgressHUD {
 
-	static let shared = RGProgressHUD()
+	public static let shared = RGProgressHUD()
 	public var mode: RGProgressHUDMode = .normal(RGProgressHUDAppearance())
 
 	var _indicatorView: UIView!

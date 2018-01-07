@@ -22,8 +22,8 @@ Pod::Spec.new do |spec|
 
   spec.subspec 'ReactiveSwift' do |reactiveswift|
       reactiveswift.dependency 'RGProgressHUD/Core'
-      reactiveswift.dependency 'ReactiveSwift', '~> 2.0'
-      reactiveswift.dependency 'ReactiveCocoa', '~> 6.0'
+      reactiveswift.dependency 'ReactiveSwift', '~> 3.0'
+      reactiveswift.dependency 'ReactiveCocoa', '~> 7.0'
       reactiveswift.source_files = 'Source/RGProgressHUDProvider+Reactive.swift'
   end
 

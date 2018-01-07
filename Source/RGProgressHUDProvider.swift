@@ -17,29 +17,19 @@ public protocol RGProgressHUDProvider {
 
 public extension RGProgressHUDProvider {
 
-	var hud: RGProgressHUD {
-		return RGProgressHUD.shared
-	}
+	var hud: RGProgressHUD { return .shared }
 
-	func showLoader() {
-		hud.show(on: presentingView)
-	}
+	func showLoader() { hud.show(on: presentingView) }
 
-	func hideLoader() {
-		hud.hide()
-	}
+	func hideLoader() { hud.hide() }
 }
 
 public extension RGProgressHUDProvider where Self: UIViewController {
 
-	var presentingView: UIView {
-		return view
-	}
+	var presentingView: UIView { return view }
 }
 
 public extension RGProgressHUDProvider where Self: UIView {
 
-	var presentingView: UIView {
-		return self
-	}
+	var presentingView: UIView { return self }
 }
